@@ -80,3 +80,14 @@
   平台目录、根 `AGENTS.md`、`.gitattributes`
 - **可选后续**：新项目若要采用我的 context-curation 政策（spec/research 组织与
   jsonl 引用约定），见 `notes/trellis-context-curation/README.md`。opt-in，非恢复步骤
+
+## 5. Aegis
+
+- **来源**：https://github.com/GanyuanRan/Aegis
+- **非交互安装**：【待实测】
+- **安装**：【待实测】本机未安装，抓取上游 README 时被网络策略拦截，未取得可复现命令
+- **能力级验证**：【待实测】
+- **配置副作用**：【待实测】
+
+本条来自 `bb757d6`（原 `必装skills.md` 的第 5 项）。装好后补齐上述四项，判据同前四条：
+验证能力而非文件存在。
