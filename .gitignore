@@ -1,0 +1,17 @@
+# ~/.gitignore_global 第 4 行全局忽略了所有 .gitignore，
+# 这会让本文件无法入库、新机 clone 后 local.env 失去保护。仓库级规则在全局之后生效，反选回来。
+!.gitignore
+
+.DS_Store
+.idea/
+
+# 本机密钥，永不入库
+/local.env
+
+# 本仓库被 trellis init 生成的项目级脚手架（工具拥有其生命周期）
+/AGENTS.md
+/.agents/
+/.claude/
+/.codex/
+/.trellis/
+/.gitattributes
