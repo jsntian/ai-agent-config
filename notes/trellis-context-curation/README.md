@@ -1,6 +1,6 @@
 # Trellis Context Curation 政策
 
-我对 Trellis spec/research 组织方式的主张。**这是个人偏好，不是本仓库的安装内容**——`install.sh` 不会部署它，它的作用对象是别的项目。
+我对 Trellis spec/research 组织方式的主张。**这是个人偏好，不是本仓库的安装内容**——本仓库的恢复流程不部署它，它的作用对象是别的项目。
 
 ## 状态
 

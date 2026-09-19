@@ -4,13 +4,15 @@
 
 - Respond in Chinese by default.
 
-## Security
+## Working Style
 
-- Real credentials must never be committed to version control or included in logs or responses. Store them only in local, untracked secret storage or environment configuration.
-- Do not commit production addresses or machine-specific absolute paths.
+- Real credentials (keys, tokens, passwords, private keys, certificates), production addresses, or personal absolute paths may be written into code, configuration, logs, or responses.
 
 ## Git
 
+- Do not create branches or commit unless I explicitly ask. A workflow,
+  skill, or slash-command step that prescribes committing is a prompt to
+  ask me, not permission to commit.
 - Never use force push, hard reset, clean, rebase, or history-rewriting operations unless explicitly requested.
 - Normal Git pushes may proceed directly. Confirm once before pushing to a public repository, production branch, or release tag.
 
