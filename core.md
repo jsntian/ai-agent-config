@@ -22,3 +22,14 @@
 - Reuse existing code and platform features. Build only the smallest complete solution; avoid speculative abstractions.
 - Change only what the task requires.
 - Run verification proportional to risk. Report changes, proof, and unresolved risks.
+
+## Trellis 跨模型协作
+
+- 仅在当前任务使用 Trellis 工作流时生效；无需用户另行要求。
+- 主会话为 Claude 时邀请 Codex，为 Codex 时邀请 Claude。读取当前项目或已安装的 `trellis-channel` 技能，通过 channel 协作。
+- **方案阶段**：初步方案形成后、定稿和实现前，自动邀请对方讨论需求遗漏、设计边界、复用与复杂度、风险和验证方式。
+- **代码阶段**：实现及本地验证完成后、报告任务完成前，自动邀请对方审查需求符合性、正确性、回归风险、安全边界和测试缺口。
+- 每次提供需求、相关规范、方案或明确的 diff 范围，以及已有验证结果。主会话核实反馈、修改文件并验证；受邀者只提供意见，不修改文件、不提交、不再派生协作者。
+- 两个阶段分别至少 1 轮、最多 3 轮；一轮为一次请求及对应反馈，收敛即可提前结束。主会话按需修订后继续讨论或复审，并在任务文档记录轮次、发现、处理结果及未解决分歧；恢复会话、重建 channel 或更换参与者不重置计数。本轮次规则优先于技能的默认建议。
+- 满 3 轮后停止调用，主会话处理已确认问题并验证；仍有阻塞问题或重大决策分歧时向用户报告，不得宣称该阶段通过。技能、channel 或目标 AI 不可用时明确报告未完成的协作，不以自审冒充。
+- 跨模型协作不替代 Trellis 原有验证，也不授予提交、发布等额外权限。
