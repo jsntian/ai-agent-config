@@ -23,6 +23,12 @@
 - Change only what the task requires.
 - Run verification proportional to risk. Report changes, proof, and unresolved risks.
 
+## Trellis 规划与实现授权
+
+- 规划完成（含方案阶段跨模型讨论）后，须向用户呈现方案并获得明确的实施批准，才能执行 `task.py start`（任务转为 `in_progress`）、派发实现代理或修改产品代码及配置。
+- 获批前只可研究、讨论和修改规划文档；同意创建任务、规划文档齐备、自审或跨模型审查通过、任务状态变化或用户沉默，均不构成实施授权。
+- 批准仅覆盖用户确认的方案和范围；范围内无需重复确认，方案或范围发生实质变化须重新批准。
+
 ## Trellis 跨模型协作
 
 - 仅在当前任务使用 Trellis 工作流时生效；无需用户另行要求。
