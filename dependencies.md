@@ -3,7 +3,7 @@
 宿主前置（不计入下列扩展）：Node/npm、Claude Code、Codex。
 缺失时记 `[SKIP]` 并报给我，人工安装后重来。
 
-本文所有命令与 flag 已在 macOS 本机核实存在（2026-09-09），标「待实测」的除外。Aegis 一节核实于 2026-09-19。
+本文所有命令与 flag 已在 macOS 本机核实存在（2026-09-09），标「待实测」的除外。
 
 ## 1. Ponytail
 
@@ -127,6 +127,8 @@ proxy（本机 127.0.0.1:8787 反向代理，压 agent 读进去的 token）、S
 - `core.md` 不收录这套指南的正文——插件已经负责了。曾经 `~/.claude/CLAUDE.md` 里抄过一份全文，
   与插件重复烧双份 token；恢复步骤 1 的软链接执行后自然消失（2026-09-19 已处理）
 
+<!-- Aegis 暂停使用；恢复时移除本注释，并将 README.md 中的扩展数量改回 6。
+
 ## 6. Aegis
 
 - **来源**：https://github.com/GanyuanRan/Aegis （method pack，非 runtime）
@@ -156,3 +158,4 @@ proxy（本机 127.0.0.1:8787 反向代理，压 agent 读进去的 token）、S
   `python3 scripts/aegis-doctor.py activation-mode explicit`（root 内跑，之后重启宿主）
 - ⚠️ 上游把 Claude Code 标为「安装指南齐全，但缺 release 级 fresh smoke 证据」；
   Codex 侧才有当前范围的 fresh evidence。Claude 侧出问题先查上游兼容性矩阵
+-->

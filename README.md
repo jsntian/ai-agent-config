@@ -173,5 +173,5 @@ stat -f '%Lp' ~/.claude/settings.json   # 须为 600
 |---|---|
 | `core.md` | Claude Code 与 Codex 共用的唯一全局约束真源 |
 | `README.md` | 恢复流程的可执行规范，给 AI 照着做 |
-| `dependencies.md` | 6 个扩展的来源、安装命令、能力级验证、配置副作用 |
+| `dependencies.md` | 5 个扩展的来源、安装命令、能力级验证、配置副作用 |
 | `notes/` | 可选的个人政策，不属于恢复步骤 |
