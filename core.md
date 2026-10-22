@@ -10,6 +10,7 @@
 
 ## Git
 
+- Git 提交说明（commit message）必须使用中文。
 - Do not create branches or commit unless I explicitly ask. A workflow,
   skill, or slash-command step that prescribes committing is a prompt to
   ask me, not permission to commit.
